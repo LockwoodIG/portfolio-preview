@@ -38,7 +38,12 @@ header.top{border-bottom:1px solid var(--line);background:var(--card)}
 .tagline{font-size:13px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase}
 .commission{background:var(--accent);color:var(--accent-ink)}
 .commission .wrap{display:flex;gap:6px 26px;align-items:center;justify-content:center;padding:20px 24px;flex-wrap:wrap;font-size:15px;letter-spacing:.02em;text-align:center;flex-direction:column}
-.commission b{letter-spacing:.02em;font-size:clamp(19px,2.6vw,24px);line-height:1.25}
+.commission .blabel{font-weight:700;font-size:15px;letter-spacing:.07em;text-transform:uppercase}
+.tiers{display:flex;gap:10px 26px;justify-content:center;align-items:stretch;flex-wrap:wrap;margin:2px 0 1px}
+.tier{display:flex;align-items:center;gap:10px;text-align:left}
+.tier b{font-size:clamp(30px,4vw,38px);line-height:1}
+.tier span{font-size:13.5px;line-height:1.25;font-weight:600}
+.tdiv{width:2px;background:var(--accent-ink);opacity:.25;align-self:stretch}
 .commission .perks{opacity:.85;font-size:14px}
 .commission .pk{white-space:nowrap}
 .commission .phone{display:inline-block;margin-top:6px;font-weight:700;font-size:16.5px;color:var(--accent-ink);text-decoration:none;border:2px solid var(--accent-ink);border-radius:999px;padding:7px 18px}
@@ -77,6 +82,7 @@ section{padding:34px 0 6px}
 .addr .city{color:var(--muted);font-weight:400}
 .chips{display:flex;gap:7px;flex-wrap:wrap}
 .chipx{background:var(--chip);color:var(--chip-ink);font-size:12.5px;padding:4px 10px;border-radius:7px;font-variant-numeric:tabular-nums}
+.chipc{background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:12.5px;padding:4px 10px;border-radius:7px;font-variant-numeric:tabular-nums}
 .blurb{font-size:14px;color:var(--muted);margin:0;flex:1}
 .actions{display:flex;gap:10px;margin-top:2px}
 a.btn{display:inline-block;text-decoration:none;font-size:13.5px;font-weight:600;letter-spacing:.03em;padding:9px 16px;border-radius:8px;background:var(--brand);color:var(--onbrand)}
@@ -128,8 +134,13 @@ footer{margin-top:48px;border-top:1px solid var(--line);background:var(--card)}
 </header>
 <div class="commission">
   <div class="wrap">
-    <b>Up to 6% buyer's-agent commission on full-price net offers</b>
-    <span class="perks"><span class="pk">6% on homes under $250K</span> · <span class="pk">4% on homes $250K+ &amp; commercial</span> · <span class="pk">Easy lockbox showings</span> · <span class="pk">Fast closings</span></span>
+    <span class="blabel">Buyer's-agent commission on full-price net offers</span>
+    <div class="tiers">
+      <div class="tier"><b>6%</b><span>homes under<br>$250K</span></div>
+      <div class="tdiv"></div>
+      <div class="tier"><b>4%</b><span>homes $250K+<br>&amp; commercial</span></div>
+    </div>
+    <span class="perks"><span class="pk">3% on all other offers</span> · <span class="pk">Easy lockbox showings</span> · <span class="pk">Fast closings</span></span>
     <a class="phone" href="tel:+19124466407">Call or text James Davidson: (912) 446-6407</a>
   </div>
 </div>
@@ -155,8 +166,8 @@ footer{margin-top:48px;border-top:1px solid var(--line);background:var(--card)}
         <div class="body">
           <div class="pricerow"><div class="price">$593,900</div><div class="mls">MLS #10816008</div></div>
           <h3 class="addr">691 Kings Rd <span class="city">· Midway, GA 31320</span></h3>
-          <div class="chips"><span class="chipx">5 bd</span><span class="chipx">3 ba</span><span class="chipx">3,573 sqft</span><span class="chipx">1.26 acres</span><span class="chipx">2,400 sqft shop</span></div>
-          <p class="blurb">Fully renovated waterfront estate: spa-style primary suite, office, bonus room, whole-house generator — and a 40×60 shop built for boats, trades, or a home business. A full-price offer here earns your agent roughly $23,700.</p>
+          <div class="chips"><span class="chipc">Buyer's agent earns $23,756</span><span class="chipx">5 bd</span><span class="chipx">3 ba</span><span class="chipx">3,573 sqft</span><span class="chipx">1.26 acres</span><span class="chipx">2,400 sqft shop</span></div>
+          <p class="blurb">Fully renovated waterfront estate: spa-style primary suite, office, bonus room, whole-house generator — and a 40×60 shop built for boats, trades, or a home business.</p>
           <div class="actions"><a class="btn" href="https://www.zillow.com/homedetails/691-Kings-Rd-Midway-GA-31320/105303674_zpid/" target="_blank" rel="noopener">View on Zillow</a></div>
         </div>
       </article>
@@ -167,7 +178,7 @@ footer{margin-top:48px;border-top:1px solid var(--line);background:var(--card)}
         <div class="body">
           <div class="pricerow"><div class="price">$439,900</div><div class="mls">MLS #2158101</div></div>
           <h3 class="addr">639 6th Ave S <span class="city">· Jacksonville Beach, FL 32250</span></h3>
-          <div class="chips"><span class="chipx">2 bd</span><span class="chipx">2 ba</span><span class="chipx">1,048 sqft</span><span class="chipx">1 block to beach</span></div>
+          <div class="chips"><span class="chipc">Buyer's agent earns $17,596</span><span class="chipx">2 bd</span><span class="chipx">2 ba</span><span class="chipx">1,048 sqft</span><span class="chipx">1 block to beach</span></div>
           <p class="blurb">Fully renovated townhouse one block from the ocean — remodeled kitchen and baths, private deck and yard, detached storage. Its twin next door at 635 is also for sale — buy one or both.</p>
           <div class="actions"><a class="btn" href="https://www.zillow.com/homedetails/639-6th-Ave-S-Jacksonville-Beach-FL-32250/66131631_zpid/" target="_blank" rel="noopener">View on Zillow</a></div>
         </div>
@@ -179,7 +190,7 @@ footer{margin-top:48px;border-top:1px solid var(--line);background:var(--card)}
         <div class="body">
           <div class="pricerow"><div class="price">$439,900</div><div class="mls">MLS #2158102</div></div>
           <h3 class="addr">635 6th Ave S <span class="city">· Jacksonville Beach, FL 32250</span></h3>
-          <div class="chips"><span class="chipx">2 bd</span><span class="chipx">2 ba</span><span class="chipx">1,048 sqft</span><span class="chipx">1 block to beach</span></div>
+          <div class="chips"><span class="chipc">Buyer's agent earns $17,596</span><span class="chipx">2 bd</span><span class="chipx">2 ba</span><span class="chipx">1,048 sqft</span><span class="chipx">1 block to beach</span></div>
           <p class="blurb">The other side of the 639 duplex, renovated to the same standard and sold separately — new kitchen, both baths, private outdoor space. Pair them for an investor buyer.</p>
           <div class="actions"><a class="btn" href="https://www.zillow.com/homedetails/635-6th-Ave-S-Jacksonville-Beach-FL-32250/2065371096_zpid/" target="_blank" rel="noopener">View on Zillow</a></div>
         </div>
@@ -191,7 +202,7 @@ footer{margin-top:48px;border-top:1px solid var(--line);background:var(--card)}
         <div class="body">
           <div class="pricerow"><div class="price">$199,900</div><div class="mls">MLS #10819113</div></div>
           <h3 class="addr">79 Terry Dr <span class="city">· Midway, GA 31320</span></h3>
-          <div class="chips"><span class="chipx">4 bd</span><span class="chipx">2 ba</span><span class="chipx">1,536 sqft</span><span class="chipx">Canal waterfront</span><span class="chipx">Seller financing</span></div>
+          <div class="chips"><span class="chipc">Buyer's agent earns $11,994</span><span class="chipx">4 bd</span><span class="chipx">2 ba</span><span class="chipx">1,536 sqft</span><span class="chipx">Canal waterfront</span><span class="chipx">Seller financing</span></div>
           <p class="blurb">Top-to-bottom renovation on a Lake Gale canal lot — new kitchen, both baths redone, split-bedroom plan. Ask about seller-financing terms for your buyer.</p>
           <div class="actions"><a class="btn" href="https://www.zillow.com/homedetails/79-Terry-Dr-Midway-GA-31320/126626198_zpid/" target="_blank" rel="noopener">View on Zillow</a></div>
         </div>
@@ -203,7 +214,7 @@ footer{margin-top:48px;border-top:1px solid var(--line);background:var(--card)}
         <div class="body">
           <div class="pricerow"><div class="price">$179,900</div><div class="mls">MLS #2001459</div></div>
           <h3 class="addr">800 P St <span class="city">· Brunswick, GA 31520</span></h3>
-          <div class="chips"><span class="chipx">3 bd</span><span class="chipx">1 ba</span><span class="chipx">1,056 sqft</span><span class="chipx">Built 1954</span></div>
+          <div class="chips"><span class="chipc">Buyer's agent earns $10,794</span><span class="chipx">3 bd</span><span class="chipx">1 ba</span><span class="chipx">1,056 sqft</span><span class="chipx">Built 1954</span></div>
           <p class="blurb">Renovated Craftsman bungalow: new roof, HVAC, water heater, LVP throughout, new stainless kitchen. Minutes to FLETC, the hospital, and the Golden Isles. 10-yr transferable termite bond.</p>
           <div class="actions"><a class="btn" href="https://www.zillow.com/homedetails/800-P-St-Brunswick-GA-31520/99932497_zpid/" target="_blank" rel="noopener">View on Zillow</a></div>
         </div>
@@ -215,7 +226,7 @@ footer{margin-top:48px;border-top:1px solid var(--line);background:var(--card)}
         <div class="body">
           <div class="pricerow"><div class="price">$159,900</div><div class="mls">MLS #10815892</div></div>
           <h3 class="addr">804 P St <span class="city">· Brunswick, GA 31520</span></h3>
-          <div class="chips"><span class="chipx">2 bd</span><span class="chipx">1 ba</span><span class="chipx">900 sqft</span><span class="chipx">Built 1954</span></div>
+          <div class="chips"><span class="chipc">Buyer's agent earns $9,594</span><span class="chipx">2 bd</span><span class="chipx">1 ba</span><span class="chipx">900 sqft</span><span class="chipx">Built 1954</span></div>
           <p class="blurb">The 800 P St renovation package on a cozier footprint — new roof, HVAC, water heater, stainless appliances, covered front porch. Ideal first home or turnkey rental. 10-yr transferable termite bond.</p>
           <div class="actions"><a class="btn" href="https://www.zillow.com/homedetails/804-P-St-Brunswick-GA-31520/464215517_zpid/" target="_blank" rel="noopener">View on Zillow</a></div>
         </div>
@@ -226,7 +237,7 @@ footer{margin-top:48px;border-top:1px solid var(--line);background:var(--card)}
         <div class="body">
           <div class="pricerow"><div class="price">$89,000</div><div class="mls">MLS #10816015</div></div>
           <h3 class="addr">108 Saxon St <span class="city">· Brunswick, GA 31525</span></h3>
-          <div class="chips"><span class="chipx">3 bd</span><span class="chipx">1 ba</span><span class="chipx">1,222 sqft</span><span class="chipx">Investor special</span></div>
+          <div class="chips"><span class="chipc">Buyer's agent earns $5,340</span><span class="chipx">3 bd</span><span class="chipx">1 ba</span><span class="chipx">1,222 sqft</span><span class="chipx">Investor special</span></div>
           <p class="blurb">Full-renovation project for a flip, BRRRR, or rental hold — comparable renovated homes nearby support a $200K+ ARV. Sold as-is; cash or hard money recommended.</p>
           <div class="actions"><a class="btn" href="https://www.zillow.com/homedetails/108-Saxon-St-Brunswick-GA-31525/99903682_zpid/" target="_blank" rel="noopener">View on Zillow</a></div>
         </div>
@@ -237,7 +248,7 @@ footer{margin-top:48px;border-top:1px solid var(--line);background:var(--card)}
         <div class="body">
           <div class="pricerow"><div class="price"><small>Inquire for pricing</small></div><div class="mls">Self-storage</div></div>
           <h3 class="addr">316 Emerald Rd N <span class="city">· Greenwood, SC 29646</span></h3>
-          <div class="chips"><span class="chipx">18,000 sqft</span><span class="chipx">Metal roof</span><span class="chipx">Income asset</span></div>
+          <div class="chips"><span class="chipc">4% buyer-agent commission</span><span class="chipx">18,000 sqft</span><span class="chipx">Metal roof</span><span class="chipx">Income asset</span></div>
           <p class="blurb">Operating self-storage facility with active buyer interest — quick-close offers get priority. Call direct for pricing and the full financial package.</p>
           <div class="actions"><a class="btn" href="tel:+19124466407">Call (912) 446-6407</a><a class="btn ghost" href="mailto:james@lockwoodig.com?subject=316%20Emerald%20Rd%20N%20inquiry">Request the file package</a></div>
         </div>
@@ -248,7 +259,7 @@ footer{margin-top:48px;border-top:1px solid var(--line);background:var(--card)}
         <div class="body">
           <div class="pricerow"><div class="price">$849,000</div><div class="mls">13-unit MHP</div></div>
           <h3 class="addr">8460 Old Percival Rd <span class="city">· Columbia, SC 29223</span></h3>
-          <div class="chips"><span class="chipx">13 park-owned homes</span><span class="chipx">Stabilized income</span><span class="chipx">All offers entertained</span></div>
+          <div class="chips"><span class="chipc">Buyer's agent earns $33,960</span><span class="chipx">13 park-owned homes</span><span class="chipx">Stabilized income</span><span class="chipx">All offers entertained</span></div>
           <p class="blurb">Back on the market — 13-unit park-owned mobile home park, leases in place. All offers entertained; full due-diligence package available.</p>
           <div class="actions"><a class="btn" href="tel:+19124466407">Call (912) 446-6407</a><a class="btn ghost" href="mailto:james@lockwoodig.com?subject=8460%20Old%20Percival%20Rd%20—%20DD%20package%20request">Request DD package</a></div>
         </div>
